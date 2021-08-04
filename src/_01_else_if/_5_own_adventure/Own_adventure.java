@@ -8,7 +8,7 @@ public class Own_adventure {
 		String answer = JOptionPane.showInputDialog(null, "Hi, im bob the snail and I need your help! Will you help me?");
 		
 		if(answer.equals("No")) {
-			JOptionPane.showMessageDialog(null, "Whatever, I don't need your help!")
+			JOptionPane.showMessageDialog(null, "Whatever, I don't need your help!");
 		}
 		else if(answer.equals("Yes")) {
 			JOptionPane.showMessageDialog(null, "Great, I need to fix my broken shell and I want you to help me.");
@@ -19,7 +19,7 @@ public class Own_adventure {
 			if (answer2.equals("The small volcano")) {
 				JOptionPane.showMessageDialog(null, "You went to the small volcano but it had to little lava. In anger you punched the volcano and it collapsed with you inside it.");
 			}
-			if (answer2.equals("The big volcano"))
+			else if (answer2.equals("The big volcano"))
 				JOptionPane.showMessageDialog(null, "You successfully got 2 buckets filled with lava");
 				JOptionPane.showMessageDialog(null, "Now the next ingredient we need is diamonds");
 				String answer3 = JOptionPane.showInputDialog(null, "Which cave should we go to, the steep and dangerous cave or the cave with lots of insects?");
@@ -29,9 +29,18 @@ public class Own_adventure {
 				}
 				else if (answer3.equals("The steep and dangerous cave")) {
 					JOptionPane.showMessageDialog(null, "After realizing that you were a snail and you would stick to the ground no matter how steep it was, you collecting the diamonds that you needed easily.");
-					JOptionPane.showMessageDialog(null, "Now the last ingredient we need is a muffin");
-					String answer3 = JOptionPane.showInputDialog(null, "Which bakery should we go to, the very popular one, or the not so popular one?");
+					JOptionPane.showMessageDialog(null, "Now the last ingredient we need is some breakfast because I still havent eaten.");
+					String answer4 = JOptionPane.showInputDialog(null, "Which one should we eat, rice crisps or waffles");
+					
+					if(answer4.equals("Waffles")) {
+						JOptionPane.showMessageDialog(null, "After you take a bite of the waffle you feel a tingling sensation on your tongue. Then, you suddenly realized that your allergic to gluten.");
+					}
+					else if (answer4.equals("rice crisps")) {
+						JOptionPane.showMessageDialog(null, "You ate the rice crips with joy, and succesfully crafted the super glue and stuck bobs shell together again!");
+						JOptionPane.showMessageDialog(null, "While bob was walking back home he tripped on a rock and broke his shell again.");
+					}
 				}
+			
 		} 
 	}
 }
